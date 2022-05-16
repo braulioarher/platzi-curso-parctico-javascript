@@ -1,0 +1,41 @@
+Notas curso practico de Javascript
+
+Clase porcentajes
+
+-Para inprimir diferentes variables dentro de la cosola se usa la funcion console.log() de la siguiente 
+manera:             console.log({
+                                variable1,
+                                variable2,
+                                variable3,
+                                })
+Esto imprimira todas las variables en requisito en forma de objeto
+
+Para escribir dentro de html con Javascript se necesita de usar la funcion o atributo llamado .innerText
+haciendo referencia al ID declarado en nuestro HTML
+
+
+***DESCANSO POR HOY*** EN OTRA OCASION SE RETOMARA EL RETO DONDE HAY QUE APLICAR UN DESCUENTO DEPENDIENDO
+DEL CUPON Y SE HARA POR MEDIO DE OBJETOS**
+
+**Herramientas estadisticas**
+
+/Media aritmetica  "Promedio"
+val1 + val2 + val3 / nval
+/Mediana el valor que esta en el medio despues de ordenar valores de menor a mayor
+**cuando se tiene una lista con numeros par se saca el promedio de los dos valores en medio** 
+/Moda el valor o elemento que mas se repiten en una serie de datos
+
+
+***Para iterar elementos de un array exiten metodos en Javascript**
+array.reduce(
+    function (incialValue, currentValue){
+        return incialValue + currentValue;
+    }
+);
+suma el primer elemento con el segundo, el segundo con el tercero y asi sucesivamente
+se puede usar para multiplicar, dividir etc
+
+-el metodo reduce necesita de contener una funcion
+-la funcion debe contener el parametro de valor inicial y el valor del elemento actual
+
+este aplicara la funcion a todos los elementos de la array hasta agotar los elementos
