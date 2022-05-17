@@ -26,7 +26,7 @@ val1 + val2 + val3 / nval
 /Moda el valor o elemento que mas se repiten en una serie de datos
 
 
-***Para iterar elementos de un array exiten metodos en Javascript**
+**METODO REDUCE ITERA LOS ELEMENTOS DE UN ARRAY APLICANDOLE UNA FUNCION**
 array.reduce(
     function (incialValue, currentValue){
         return incialValue + currentValue;
@@ -39,3 +39,25 @@ se puede usar para multiplicar, dividir etc
 -la funcion debe contener el parametro de valor inicial y el valor del elemento actual
 
 este aplicara la funcion a todos los elementos de la array hasta agotar los elementos
+
+**METODO MAP**
+
+lista.map(                 //el metodo map aplica la funcion a cada elemento del array
+    function (elemento) {   //se ejecuta una funcion anonima donde el argumento es el elemento actual del array
+        if (listaCount[elemento]) {  // si existe valor en el objeto que es igual elemento actual del array 
+            listaCount[elemento] += 1; //entonces suma uno al valor del objeto
+        } else {
+        listaCount[elemento] = 1;  //si no crea un nuevo objeto con este elemento y valor igual a 1
+        }
+    }
+);
+
+**METODO ENTRIES** 
+
+//SE CREA UN ARRAY PARA SABER CUAL ES EL ELEMENTO QUE MAS SE REPITE
+
+const listaArray = Object.entries(listaCount).sort(   // el metodo entries toma el [key, value] del objeto para convertirlo en
+    function (elementoA, elementoB) {       //un array esto aplica para cada elemento del objeto
+       return elementoA[1] - elementoB[1];      //con el metodo sort ordenamos el nuevo array de menor a mayor segun el valor del objeto
+    }
+);
