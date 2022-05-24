@@ -21,6 +21,10 @@
 - Tercer paso: crear funciones
 - Cuarto paso: integrar e interactuar javascript con HTML.
 
+## Taller 4> Analisis salarial
+
+- Generar una lista de personas por grupo
+
 ## Notas curso practico de Javascript
 
 ## TALLER PORCENTAJES
@@ -84,3 +88,16 @@ const listaArray = Object.entries(listaCount).sort(   // el metodo entries toma 
     function (elementoA, elementoB) {       //un array esto aplica para cada elemento del objeto
        return elementoA[1] - elementoB[1];      //con el metodo sort ordenamos el nuevo array de menor a mayor segun el valor del objeto
     });
+
+## PROYECTO FINAL
+
+Para este pryecto final se pretende crear una calculadora de inversion.
+
+La calculadora va permitir declarar el capital incial de la inversion, las aportaciones anuales que se haran, el tiempo que dura
+la inversion y la tasa de rendimiento de dicha inversion.
+
+Para calcular el interes simple solo se necesitan 3 variables:
+    -Inversion inicial
+    -Tasa de rendimiento
+    -tiempo a invertir.
+La formula es la siguiente (inversion incial x tasa de rendimiento anual x numero de annios)

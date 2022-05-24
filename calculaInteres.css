@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+header {
+    background-color: rgb(0, 100, 255);
+    text-align: center;
+    padding-top: 3vh;
+    height: 10vh;
+    width: 90vw;
+    margin: 3vh auto 3vh auto;
+    color: azure;
+    font-size: 4vh;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.main-section {
+    background-color: rgba(0,212,255,1);
+    height: 80vh;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    min-width: 150px;
+}
+p {
+    margin: 3vh 0 3vh 0;
+    text-align: center;
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+
+.main-section form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    width: 50vw;
+    margin: auto;
+    align-items:  stretch;
+    row-gap: 1vw;
+    font-size: 3.5vh;
+}
+
+.main-section form label input {
+    width: 60%;
+    height: 6vh;
+    font-size: 3vh;
+    min-width: 55px;
+}
+.main-section form label select {
+    width: 40%;
+    height: 7vh;
+    font-size: 3vh;
+    min-width: 55px;
+}
+.main-section form button {
+    width: 30%;
+    height: 7vh;
+    font-size: 3vh;
+    min-width: 55px;
+    
+}
+#label-IncAnual {
+    display: none;
+}
+#interest-result {
+    margin: 0;
+    text-align: center;
+    font-size: 3.5vh;
+    font-weight: bold;
+}

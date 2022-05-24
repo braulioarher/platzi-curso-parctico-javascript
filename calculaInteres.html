@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de interes</title>
+    <link rel="stylesheet" href="./calculaInteres.css">
+</head>
+<body>
+<header>Calculadora de interes</header>
+<main>
+    <section class="main-section">
+        <p>Calcular el interes simple o compuesto de tu inversion, solo rellena la siguiente informacion y presiona calcular:</p>
+        <form action="">
+        <label for="input-InvIncial">
+            <span >Inversion inicial:</span>
+            <input type="number" id="input-InvIncial">
+        </label>
+        <label for="input-IncAnual" id="label-IncAnual">
+            <span >Incremento anual:</span>
+            <input type="number" id="input-IncAnual">
+        </label>
+        <label for="input-tasaAnual">
+            <span >Tasa anual:</span>
+            <input type="number" id="input-tasaAnual">
+        </label>
+        <label for="input-annios">
+            <span >Años a invertir:</span>
+            <input type="number" id="input-annios">
+        </label>
+        <label for="input-tipoint">
+            <span >Tipo de interes:</span>
+            <select name="select" id="select-tipoInt">
+                <option value="simple">Simple</option>
+                <option value="compuesto">Compuesto</option>
+            </select>
+        </label>
+        <button type="button" onclick="calcularInteres()">Calcular</button>
+        <p id="interest-result"></p>
+        </form>
+    </section>
+</main>
+<script src="./calculaInteres.js"></script>
+</body>
+</html>
